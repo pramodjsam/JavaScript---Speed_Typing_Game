@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"">
+	<!--fontawesome-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Word Beater</title>
+	<style>
+		body{
+			height: 100vh;			
+		}
+	</style>
+</head>
+<body class="bg-dark text-white">
+	<header class="bg-secondary text-center p-3 mb-5">
+		<h3>WordBeater</h3>
+	</header>
+	<button class="btn btn-success" id="easy" value="5">Easy</button>
+	<button class="btn btn-warning" id="medium" value="3">Medium</button>
+	<button class="btn btn-danger" id="hard" value="2">Hard</button>
+	<div class="container text-center">
+		<div class="row">
+			<div class="col-md-6 mx-auto">
+				<p class="text-capitalize lead">Type the given word withing
+					<span class="text-success" id="seconds">5</span> Seconds:
+				</p>
+				<h2 class="display-2 mb-5" id="current-word">Hello</h2>
+				<input type="" class="form-control form-control-lg" id="word-input"
+				placeholder="Start Typing..." autofocus
+				>
+				<h4 class="my-2" id="message"></h4>
+
+				<div class="row mt-5">
+					<div class="col-md-6">
+						<h3>Time Left: <span id="time">0</span></h3>
+					</div>
+					<div class="col-md-6">
+						<h3>Score: <span id="score">0</span></h3>
+					</div>
+				</div>
+
+				<div class="row mt-5">
+					<div class="col-md-12">
+						<div class="card card-body bg-secondary text-white">
+							<h5>Instructions</h5>
+							<p>Type each word in a given amount of seconds to score. To play again, type the current word. Your score will reset</p>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+
+<script type="text/javascript" src="app.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>	
+</body>
+</html>
